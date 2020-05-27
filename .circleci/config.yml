@@ -14,10 +14,10 @@ jobs:
           keys:
             - app-({ checksum "package.json" })
             - app-
-      -run:
+      - run:
         name: install yarn
         command: npm install -g yarn
-      -run:
+      - run:
         name: install dependencies
         command: yarn install
       - save_cache:
